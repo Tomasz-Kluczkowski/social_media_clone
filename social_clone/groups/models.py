@@ -33,9 +33,6 @@ class Group(models.Model):
         ordering = ["name"]
 
 
-
-
-
 class GroupMember(models.Model):
     group = models.ForeignKey(Group, related_name='memberships',
                               on_delete=models.CASCADE)

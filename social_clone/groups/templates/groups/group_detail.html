@@ -8,11 +8,6 @@
                 <span class="glyphicon glyphicon-remove-circle"></span>
                 Leave
             </a>
-        {% else %}
-            <a class="btn btn-lg btn-fill btn-warning" href="{% url 'groups:leave' slug=group.slug %}">
-                <span class="glyphicon glyphicon-remove-circle"></span>
-                Leave
-            </a>
         {%  else %}
             <a class="btn btn-lg btn-fill btn-default" href="{% url 'groups:join' slug=group.slug %}">
                 <span class="glyphicon glyphicon-ok-circle"></span>
